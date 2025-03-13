@@ -17,8 +17,8 @@
     <script>
         // Função para calcular a diferença de dias
         function calcularDias() {
-            // Defina a data de início (quando vocês começaram a contar)
-            var dataInicio = new Date('2023-12-28'); // Exemplo: 1 de janeiro de 2023
+            // Defina a data de início
+            var dataInicio = new Date('2024-12-28'); // Exemplo: 28 de dezembro de 2023
             
             // Data de hoje
             var hoje = new Date();
@@ -32,6 +32,9 @@
             // Exibir o número de dias no elemento HTML
             document.getElementById('diasJuntos').innerText = diferencaEmDias;
         }
+
+        // Chama a função ao carregar a página
+        window.onload = calcularDias;
     </script>
 </head>
 <body onload="calcularDias()">
