@@ -55,9 +55,17 @@
         </div>
     </div>
 
-    <audio autoplay>
+    <audio id="minhaMusica">
         <source src="mil-anoas.mp3" type="audio/mp3">
         Seu navegador não suporta a tag de áudio.
     </audio>
+
+    <script>
+        // Tocar a música quando o usuário clicar na página
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('minhaMusica');
+            audio.play();
+        });
+    </script>
 </body>
 </html>
