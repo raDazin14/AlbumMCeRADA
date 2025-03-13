@@ -13,6 +13,33 @@
         <h1>NOSSO ÁLBUM DE FOTOS </h1> 
     </div> 
 
+    <title>Dias Juntos</title>
+    <script>
+        // Função para calcular a diferença de dias
+        function calcularDias() {
+            // Defina a data de início (quando vocês começaram a contar)
+            var dataInicio = new Date('2023-12-28'); // Exemplo: 1 de janeiro de 2023
+            
+            // Data de hoje
+            var hoje = new Date();
+            
+            // Calcular a diferença em milissegundos
+            var diferencaEmMilissegundos = hoje - dataInicio;
+            
+            // Converter para dias
+            var diferencaEmDias = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
+            
+            // Exibir o número de dias no elemento HTML
+            document.getElementById('diasJuntos').innerText = diferencaEmDias;
+        }
+    </script>
+</head>
+<body onload="calcularDias()">
+    <h1 class="date">Estamos juntos há <span id="diasJuntos"></span> dias!</h1>
+    <h1 class="dat">desde 28/12/2024</h1>
+
+
+
     <div>
         <img src="https://i.postimg.cc/PrxnkBSb/MC-E-RADA.jpg" alt="Casal"> 
         <div class="texto"> 
@@ -44,7 +71,7 @@
     <div>
         <img src="https://i.postimg.cc/2ScvpSKF/Whats-App-Image-2025-03-12-at-20-15-16-2.jpg" alt="Casal"> 
         <div class="texto"> 
-            <p><strong>Aiai Esse Dia KKKKK!</strong></p>
+            <p><strong>Um Dia Tão Engraçado KKKKK!</strong></p>
         </div>
     </div>
 
@@ -55,6 +82,84 @@
         </div>
     </div>
 
+    <div>
+        <img src="https://i.postimg.cc/sghZktvH/1.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Até Então Ninguém Queria Nada, Mas a Alma Vibrava Por Estar Perto!</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/NFK01HXC/2.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Estivemos Em Momentos Especiais, Sempre Como Colegas, Mas Algo nus Atraia Um Ao Outro...</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/9QdQtV42/3.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>independente de Tudo, Sempre Mostramos Nossas Reais Versões!!</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/rpyRDzf3/4.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>"O Cuidado Dele Pela Minha Família Foi Fazendo Com Que Eu Me Apaixonasse Mais Por Ele"
+            Maria Clara.</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/GmKHndbQ/5.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Depois De Muita Enrolação Fui Ver Ele na Casa Dele
+            Maria Clara.</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/DyKZW8Z6/6.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Esses Sem Sombra de Dúvidas Foi um Dos Nossos Melhores Dias!.</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/k5DXrS1J/7.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Eu Te Escolheria Mais Milhões de Vidas! Maria Clara!</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/VkZmF6Y3/8.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Esse É o Amor Hum, Hum Tão Belo Amor...</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/659KJRqk/9.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>O Sonho É um Desejo D 'Alma 💙</strong></p>
+        </div>
+    </div>
+
+    <div>
+        <img src="https://i.postimg.cc/T3svD40x/10.jpg" alt="Casal"> 
+        <div class="texto"> 
+            <p><strong>Princesinha de Titios!</strong></p>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
     <audio id="minhaMusica">
         <source src="mil-anoas.mp3" type="audio/mp3">
         Seu navegador não suporta a tag de áudio.
@@ -67,5 +172,6 @@
             audio.play();
         });
     </script>
+    
 </body>
 </html>

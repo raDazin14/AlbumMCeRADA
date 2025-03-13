@@ -1,44 +1,40 @@
-
 .text {
     font-family: 'Dancing Script'; 
-  font-size: 2rem;
-  color: #D87093; 
-  text-align: center;
-  margin-top: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    font-size: 2rem;
+    color: #D87093; 
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
-
 
 body {
     margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  height: 100vh;
-  background: linear-gradient(45deg, #5c6bc0, #8e99f3); /* Gradiente suave com apenas dois tons de azul */
-  background-size: 400% 400%; /* Aumenta a área do gradiente para maior movimento */
-  animation: gradientBackground 5s ease infinite; /* Animação do fundo */  
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: linear-gradient(45deg, #5c6bc0, #8e99f3);
+    background-size: 400% 400%;
+    animation: gradientBackground 5s ease infinite;
 }
 
 img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 300px;
-  margin: 15px auto;
-  padding: 10px;
-  background-color: rgb(233, 189, 189);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Tamanho da imagem no seu HTML original */
+    margin: 15px auto;
+    padding: 10px;
+    background-color: rgb(233, 189, 189);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
 
 .texto {
-  font-size: 1.5rem;
-  color: #332929;
-  margin-top: 10px;
-  font-style: italic;
-  text-align: center;
-
-    
+    font-size: 1.5rem;
+    color: #0c0f1b;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
 }
 
 @keyframes gradientBackground {
@@ -51,4 +47,21 @@ img {
     100% {
       background-position: 0% 50%;
     }
-  }
+}
+
+.date {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Dancing Script';
+  margin-top: 20px;
+  color: #fafafa;
+
+}
+
+.dat {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: helvetica;
+  color: yellow;
+}
+
