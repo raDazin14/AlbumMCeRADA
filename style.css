@@ -1,26 +1,56 @@
 
 .text {
-    color: rgb(0, 204, 255);
-    text-align: center;
+    font-family: 'Dancing Script', cursive; 
+  font-size: 2rem;
+  color: #D87093; 
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 body {
-    background-color: rgb(0, 0, 0);
-    
+    margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background: linear-gradient(45deg, #5c6bc0, #8e99f3); /* Gradiente suave com apenas dois tons de azul */
+  background-size: 400% 400%; /* Aumenta a área do gradiente para maior movimento */
+  animation: gradientBackground 5s ease infinite; /* Animação do fundo */  
 }
 
 img {
-    width:250px;
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-    height: 250px;
-    border: 5px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgb(233, 189, 189);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
 
 .texto {
-    color: white;
-    text-align: center;
-    font-family: system-ui;
+  font-size: 1.5rem;
+  color: #332929;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+
     
 }
+
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
